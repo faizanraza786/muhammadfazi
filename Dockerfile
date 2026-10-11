@@ -4,6 +4,5 @@ WORKDIR /app
 
 COPY . .
 
-RUN javac -d out src/main/java/com/napier/sem/Main.java
-
-CMD ["java", "-cp", "out", "com.napier.sem.Main"]
+RUN javac -d out src/main/java/com/napier/sem/App.java
+CMD ["java", "-cp", "out", "com.napier.sem.App"]
